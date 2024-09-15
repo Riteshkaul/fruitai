@@ -28,7 +28,7 @@ SECRET_KEY = os.getenv('SECRET_KEY', 'django-insecure-(rk^a!n$_@*u8q%l-p$ejfoptk
 # ALLOWED_HOSTS = ['fruitai-1-0kzw.onrender.com', 'localhost', '127.0.0.1']
 if os.getenv('RENDER'):  # Render environment
     DEBUG = False
-    ALLOWED_HOSTS = ['fruitai-1-0kzw.onrender.com']  # Update with your Render domain
+    ALLOWED_HOSTS = ['fruitai-2.onrender.com']  # Update with your Render domain
 else:  # Local development
     DEBUG = True
     ALLOWED_HOSTS = ['localhost', '127.0.0.1', '[::1]']
@@ -92,7 +92,7 @@ DATABASES = {
 
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:5173",
-    "https://fruitai-1-0kzw.onrender.com",
+    "https://fruitai-2.onrender.com",
 ]
 
 # Password validation
