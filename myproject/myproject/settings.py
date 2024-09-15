@@ -25,14 +25,15 @@ SECRET_KEY = os.getenv('SECRET_KEY', 'django-insecure-(rk^a!n$_@*u8q%l-p$ejfoptk
 # SECURITY WARNING: don't run with debug turned on in production!
 
 
-# ALLOWED_HOSTS = ['fruitai-1-0kzw.onrender.com', 'localhost', '127.0.0.1']
-if os.getenv('RENDER'):  # Render environment
-    DEBUG = False
-    ALLOWED_HOSTS = ['fruitai-2.onrender.com']  # Update with your Render domain
-else:  # Local development
-    DEBUG = True
-    ALLOWED_HOSTS = ['localhost', '127.0.0.1', '[::1]']
-
+# # ALLOWED_HOSTS = ['fruitai-1-0kzw.onrender.com', 'localhost', '127.0.0.1']
+# if os.getenv('RENDER'):  # Render environment
+#     DEBUG = False
+#     ALLOWED_HOSTS = ['fruitai-2.onrender.com']  # Update with your Render domain
+# else:  # Local development
+#     DEBUG = True
+#     ALLOWED_HOSTS = ['localhost', '127.0.0.1', '[::1]']
+ALLOWED_HOSTS = ['.vercel.app','now.sh','127.0.0.1','localhost']
+DEBUG = False
 # Application definition
 
 INSTALLED_APPS = [
@@ -130,7 +131,8 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
 STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+STATICFILES_DIRS = os.path.join(BASE_DIR, 'static'),
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles_build', 'static')
 
 
 # Default primary key field type
