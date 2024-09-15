@@ -91,8 +91,10 @@ DATABASES = {
 
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:5173",
+    "https://fruitai-1-0kzw.onrender.com",
 ]
-CORS_ALLOW_ALL_ORIGINS = True
+CORS_ALLOW_ALL_ORIGINS = False  # Set to False if you use specific origins
+
 
 CORS_ALLOW_METHODS = [
     'GET',
