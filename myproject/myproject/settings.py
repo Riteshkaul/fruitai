@@ -83,6 +83,7 @@ DATABASES = {
         'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
+ALLOWED_HOSTS = ['fruitai-1-0kzw.onrender.com', 'localhost', '127.0.0.1']
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:5173",
 ]
