@@ -1,0 +1,133 @@
+/* Container for the FAQ list */
+.faq-list-container {
+  width: 80%; /* Adjust the width as needed */
+  margin: 0 auto; /* Center the container horizontally */
+  padding: 20px;
+  
+}
+
+/* FAQ form container styling */
+.faq-form-container {
+  max-width: 600px;
+  margin: 20px auto; /* Center the form horizontally */
+  padding: 20px;
+  background-color: #f4f4f4;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* FAQ list items */
+.faq-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.faq-item {
+  padding: 15px;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 10px;
+}
+
+.faq-item strong {
+  font-size: 18px;
+  color: #333;
+}
+
+.faq-item p {
+  margin-top: 5px;
+  color: #555;
+}
+
+/* Button styles */
+.add-faq-button,
+.edit-faq-button,
+.delete-faq-button {
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  margin-right: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+
+
+
+
+/* Align buttons in the list items */
+.faq-item button {
+  margin-right: 10px;
+  display: inline-block;
+}
+
+/* FAQ Form Styling */
+.faq-form {
+  background: linear-gradient(90deg, #E0BCF3 0%, #7EE7EE 100%);
+  padding: 30px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 600px;
+  margin: 20px auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Form Group Styling */
+.form-group {
+  width: 100%;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Label Styling */
+.form-label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+/* Input and Textarea Styling */
+.form-input, .form-textarea {
+  width: 100%;
+  max-width: 600px;
+  padding: 14px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.form-textarea {
+  height: 180px;
+  resize: vertical;
+}
+
+/* Focus state for input and textarea */
+.form-input:focus, .form-textarea:focus {
+  outline: none;
+ 
+}
+
+/* Submit Button Styling */
+.form-button {
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background-color 0.3s ease;
+  width: 100%;
+  max-width: 250px;
+}
+
+
+/* Ensure the form is centered and takes up more space on larger screens */
+

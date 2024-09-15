@@ -1,0 +1,55 @@
+.translator-page {
+  height: 100vh;
+  background: linear-gradient(90deg, #E0BCF3 0%, #7EE7EE 100%);
+  text-align: center;
+  font-family: 'Dosis', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+
+h1 {
+  margin-top: 60px;
+}
+
+textarea {
+  width: 80%;
+  height: 100px;
+  margin: 20px 0;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+select, button {
+  margin: 10px;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  color: #333;
+}
+
+button {
+  background-color: #C84AD3;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #a73d9a;
+}
+
+/* div {
+  margin-top: 20px;
+} */
+
+h2 {
+  margin-top: 20px;
+}
+
+p {
+  font-size: 18px;
+}

@@ -1,0 +1,62 @@
+/* about.css */
+
+.about {
+  min-height: 100vh; /* Ensure it covers the viewport height */
+  background: linear-gradient(90deg, #E0BCF3 0%, #7EE7EE 100%);
+  padding: 20px; /* Add padding for inner spacing */
+  text-align: center; /* Center the text */
+  font-family: 'Dosis', sans-serif; /* Font family */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center vertically */
+  align-items: center; /* Center horizontally */
+  color: black; /* Change to black for visibility on white */
+  position: relative; /* Establishes a positioning context for the white background */
+}
+
+.about-content {
+  max-width: 600px; /* Limit the width for better readability */
+  position: relative; /* For proper positioning inside the container */
+  z-index: 2; /* Ensure content stays above the white background */
+  text-align: center; /* Center the text inside */
+}
+
+h1 {
+  margin-bottom: 20px; /* Space between heading and paragraph */
+}
+
+p {
+  margin-bottom: 30px; /* Space between paragraph and button */
+  font-size: 18px; /* Font size for the paragraph */
+}
+
+.about-button {
+  background-color: black; /* Button color */
+  color: white;
+  border: none;
+  border-radius: 5px; /* Rounded corners */
+  padding: 10px 20px; /* Padding inside the button */
+  font-size: 16px; /* Font size of the button text */
+  cursor: pointer; /* Change cursor on hover */
+  transition: background-color 0.3s ease; /* Smooth background color change */
+}
+
+.about-button:hover {
+  background-color: #333; /* Darker color on hover */
+}
+
+/* White background section */
+.white-background {
+  width: 100%; /* Stretch to cover the full width */
+  min-height: 40vh; /* Ensure it covers a minimum of 40% of the viewport height */
+  position: absolute; /* Position it absolutely relative to its containing element */
+  bottom: 0; /* Stick it to the bottom */
+  left: 0; /* Full width */
+  border-radius: 47px 45px 50px 50px; /* Rounded corners */
+  background-color: white; /* White background */
+  display: flex; /* Use flexbox to center content if needed */
+  align-items: center; /* Center vertically */
+  justify-content: center; /* Center horizontally */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add shadow */
+  z-index: 1; /* Ensure it stays below the content */
+}
